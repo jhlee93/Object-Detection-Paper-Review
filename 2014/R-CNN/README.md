@@ -9,13 +9,15 @@
 
 ## Introduction
 - Multi-layer convolutional network compute feature
-- Thress modules
+    - Detec bounding boxes
+    - Pixel-level segmentation
+- Three modules
     - Region proposal
     - Convolution neural network
     - Linear SVM
 
 ## Object Detection Overview
-
+- 
 
 # Reference
 - [Rich feature hierarchies for accurate object detection and semantic segmentation](https://arxiv.org/pdf/1311.2524.pdf)
