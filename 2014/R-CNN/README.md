@@ -17,7 +17,7 @@
     - Linear SVM
 
 ## Object Detection Overview
-- ![Detection System](./image/R-CNN Overview.jpg)
+![DetectionSystem](./image/R-CNN_Overview.jpg)
 
 # Reference
 - [Rich feature hierarchies for accurate object detection and semantic segmentation](https://arxiv.org/pdf/1311.2524.pdf)
