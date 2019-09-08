@@ -9,7 +9,7 @@
 ## 1. Introduction
 - R-CNN, Fast R-CNN은 region proposal을 생성하는 단계에서 너무 많은 계산량을 차지하게됨
 - 따라서, Faster R-CNN에서는 Convolutional layer가 공유할 수 있는 **Region Proposal Networks(RPNs)** 를 제안함
-- Convolutinos를 공유함으로서 컴퓨팅 비용을 줄임(이미지당 10ms)
+- Convolutions를 공유함으로서 컴퓨팅 비용을 줄임(이미지당 10ms)
 - Region bounding boxes, objectness scores동시에 regress
 - **Anchor box**라는 개념이 처음 등장
 - training, test에서 single-sclae image를 사용하여 처리속도가 빠름
@@ -38,20 +38,21 @@
 - ![Loss_Function](./image/LossFunction.png)
     - 논문에서는 *Figure 3* 과 같이 loss function을 정의함
     - *Classification Loss*
-        - *p* 로 인하여 오직 positive anchor에 대해서만 적용되는것을 확인할 수 있음
         - Object or Not object? 판단
-    - Figure 3. *Bounding Box Regression Loss* ![Target_Box](./image/Target_Box.png)
+    - *Bounding Box Regression Loss*
+        - *p* 로 인하여 오직 positive anchor에 대해서만 적용되는것을 확인할 수 있음
+        - Figure 4. ![Target_Box](./image/Target_Box.png)
         - *t* 는 위 수식을 통해 계산되는데, 목적은 anchor box를 ground-truth box로 최대한 가깝게 하기 위해서라고 함 (*a* : anchor box, * : ground-truth box, *(x, y)* 는 box의 중심 좌표)
-        - Figure 4. ![Smooth_L1_1](./image/Smooth_L1_1.png) ==> 이후, *Smooth L1 Loss*를 적용함
-        - Figure 5. *Smooth L1 Loss* ![Smooth_L1_2](./image/Smooth_L1_2.png)
+        - Figure 5. ![Smooth_L1_1](./image/Smooth_L1_1.png) ==> 이후, *Smooth L1 Loss*를 적용함
+        - Figure 6. *Smooth L1 Loss* ![Smooth_L1_2](./image/Smooth_L1_2.png)
             - Figure 5에서 확인할 수 있듯이 *Smooth L1* 은 -1 ~ 1 에서 2차함수 형태를 갖음
             - 결과적으로 이러한 형태의 그래프는 충분히 작은 error값들을 더욱 빠르게 감소 시킬 수 있게함
-        - Fingure 6. ***L1 vs. Smooth L1*** ![L1_SmoothL1](./image/L1_SmoothL1.png)
+        - Figure 7. ***L1 vs. Smooth L1*** ![L1_SmoothL1](./image/L1_SmoothL1.png)
 
 ## 4. Conclusion
 - Region Proposal Network(RPN)을 제안하면서 효율적은 region proposal을 생성함
 - RPN을 학습한 결과 region propsoal의 quality가 개선되었고, 결과적으로 object detection 성능이 향상됨
-- 아직 real-time에는 부족하지만, 근접했다고 언급함
+- 아직 real-time에는 부족하지만 근접했다고 언급함
 
 # Reference
 - [Faster R-CNN Paper](https://arxiv.org/abs/1504.08083)
