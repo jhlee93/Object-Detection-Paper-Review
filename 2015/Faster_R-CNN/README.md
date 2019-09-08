@@ -52,3 +52,6 @@
 - Region Proposal Network(RPN)을 제안하면서 효율적은 region proposal을 생성함
 - RPN을 학습한 결과 region propsoal의 quality가 개선되었고, 결과적으로 object detection 성능이 향상됨
 - 아직 real-time에는 부족하지만, 근접했다고 언급함
+
+# Reference
+- [Faster R-CNN Paper](https://arxiv.org/abs/1504.08083)
