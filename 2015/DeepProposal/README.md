@@ -7,7 +7,7 @@
 
 ## Index
 1. Abtract
-2. DeepProposal
+2. Introduction
 3. Basic Approach
 4. Evaluation
 5. Conclusion
