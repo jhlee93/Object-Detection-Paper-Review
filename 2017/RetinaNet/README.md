@@ -48,7 +48,7 @@ Class imbalance를 해결하기위해 일반적인 방법으로 0~1 사이값을
 아래 실험결과의 (a), (b), (c)는 *a-balance*, *r (focusing parameter), a (weighting factor), 2-3 scale, 3 aspect ratio anchor*변화에 따른 AP측정 결과를 보이고, (d), (e)는 기존 OHEM(Online Hard Negative Mining)과 Focal Loss의 성능 비교 및 Network depth와 Image scale 변화에 따른 AP와 inference time 측정 결과를 보임.<br />
 <img src="./image/exper_1.png" width="650"> ***--> Ablation experiments for RetinaNet and Focal Loss (FL)***
 
-*r* 증가함에따라 positive sample의 영향은 거의 미미하지만, negative sample에게 멀리 하도록 하여 hard negative sample들에게 loss가 집중되는 것을 보임.<br />
+*r* 증가함에따라 positive sample의 영향은 거의 미미하지만, easy negative sample에게 멀리 하도록 하여 hard negative sample들에게 loss가 집중되는 것을 보임.<br />
 <img src="./image/fig_4.png">
 
 1-stage, 2-stage detector들과 비교 실혐 결과를 보임.<br />
