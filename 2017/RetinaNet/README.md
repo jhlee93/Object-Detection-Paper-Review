@@ -56,5 +56,11 @@ Class imbalance를 해결하기위해 일반적인 방법으로 0~1 사이값을
 
 ---
 
+## Conclusion
+
+클래스 불균형 문제를 해결하기위해 새로운 loss 함수인 Focal Loss를 정의함. Focal Loss는 쉬운 예제들에게는 가중 치를 적게 두고, 어려운 예제들에게 가중치를 높게 두어 loss를 집중 시킬 수 있도록 함. Focal loss의 성능을 확인하기 위해 1-stage detector인 RetinaNet을 설계하였고, 결과적으로 2-stage detector를 능가하는 AP와 처리속도를 보여줌.
+
+---
+
 # Reference
 - [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
