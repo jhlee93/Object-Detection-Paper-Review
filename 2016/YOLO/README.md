@@ -19,9 +19,7 @@
 
 <center><img src=./image/fig2_YOLO_detection_system.png></center>
 <center>YOLO Detection System</center>
-
-
-<br /><br />
+<br /><br /><br /><br /><br /><br />
 
 각각의 grid cell은 *B* 개의 Bbox(Bounding box)와 각각의 Bbox에 대한 *Confidence Score*를 갖게 됩니다. 만약 cell에 Object가 존재하지 않으면 *Confidence Score* = 0 이 됩니다.<br />
 각각의 grid cell에는 *C* 개의 *Conditional Class Probability* 를 갖게 되는데, *B* (Bbox의 개수)와 상관없이 단지 하나의 grid cell에 대한 class probability만 나타낸다고 합니다. 결국 *C* 는 분류해야 할 모든 클래스의 개수를 뜻합니다.<br />
