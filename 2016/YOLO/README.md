@@ -15,12 +15,12 @@
 
 ## Unified Detection
 
-아래 그림은 YOLO의 전체적인 수행과정을 보여줍니다. YOLO의 핵심은 입력 영상을 *S x S grid* 로 나누어 처리하는 것입니다.<br/>
+아래 그림은 YOLO의 전체적인 수행과정을 보여줍니다. YOLO의 핵심은 입력 영상을 *S x S grid* 로 나누어 처리하는 것입니다.
 
-<center>
-    <img src="./image/fig2_YOLO_detection_system.png"><br/>
-    YOLO Detection System
-</center>
+<center><img src="./image/fig2_YOLO_detection_system.png"></center>
+
+YOLO Detection System
+
 <br /><br />
 
 각각의 grid cell은 *B* 개의 Bbox(Bounding box)와 각각의 Bbox에 대한 *Confidence Score*를 갖게 됩니다. 만약 cell에 Object가 존재하지 않으면 *Confidence Score* = 0 이 됩니다.<br />
