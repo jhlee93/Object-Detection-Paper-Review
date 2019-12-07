@@ -19,6 +19,7 @@
 
 <center><img
 src="./image/fig2_YOLO_detection_system.png"></center>
+
 <center>
 YOLO Detection System</center>
 
