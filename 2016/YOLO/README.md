@@ -17,7 +17,7 @@
 
 아래 그림은 YOLO의 전체적인 수행과정을 보여줍니다. YOLO의 핵심은 입력 영상을 *S x S grid* 로 나누어 처리하는 것입니다.<br />
 
-<center> <img src="image/fig2_YOLO_detection_system.png" width="80%"> </center>
+<center> <img src="image/fig2_YOLO_detection_system.png" width="80%"></img> </center>
 <center> YOLO Detection System </center>
 
 <br /><br />
